@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Morse2.0</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Morse2.0</h1>
+    <h4>This coverter will convert text to morse code but with a twist...</h4>
+    <h4>All text will be letter inverted. A>Z, B>Y, Etc.</h4>
+
+    <h3>Input</h3>
+    <textarea id="input"></textarea>
+
+    <div id="txt-center">
+        <button class="btn-danger" onclick="encode()">Encode to Morse2.0</button>
+        <button class="btn-danger" onclick="decode()">Decode from Morse2.0</button>
+    </div>
+
+
+    <h3>Output</h3>
+    <textarea id="output" readonly></textarea>
+
+    <h5>Short message from Me (English)</h5>
+    <p>
+        Scouting teaches leadership, teamwork, and resilience. By creating my own secret code, I can communicate
+        creatively while learning how real cryptography protects important information.
+    </p>
+
+    <h5>Short message from Me (Morse2.0)</h5>
+    <p>
+        .... -..- .-.. ..-. --. .-. -- - / --. ...- --.. -..- ... ...- .... / --- ...- --.. .-- ...- .. .... ... .-. -.-
+        / --. ...- --.. -. -.. .-.. .. .--. / --.. -- .-- / .. ...- .... .-. --- .-. ...- -- -..- ...- / -.-- -... /
+        -..- .. ...- --.. --. .-. -- - / -. -... / .-.. -.. -- / .... ...- -..- .. ...- --. / -..- .-.. .-- ...- / .-. /
+        -..- --.. -- / -..- .-.. -. -. ..-. -- .-. -..- --.. --. ...- / -..- .. ...- --.. --. .-. . ...- --- -... / -..
+        ... .-. --- ...- / --- ...- --.. .. -- .-. -- - / ... .-.. -.. / .. ...- --.. --- / -..- .. -... -.- --. .-.. -
+        .. --.. -.- ... -... / -.- .. .-.. --. ...- -..- --. .... / .-. -. -.- .-.. .. --. --.. -- --. / .-. -- ..-.
+        .-.. .. -. --.. --. .-. .-.. --
+    </p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
